@@ -106,11 +106,9 @@ browser = pw.chromium.launch(channel="msedge", headless=headless)
 
 ```powershell
 allure generate allure-results `
-  --clean -o allure-report
+	--clean -o allure-report
 ```
 
 ## CI (GitHub Actions)
 
 A basic CI workflow is included at .github/workflows/ci.yml. It runs tests on push and pull requests using Python and Playwright.
-
-If you use the badges above, replace USERNAME/REPO with your GitHub repo path.
